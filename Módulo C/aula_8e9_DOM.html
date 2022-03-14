@@ -1,0 +1,61 @@
+
+    <!--             Arvore DOM                 -->
+    <!--                                        -->
+    <!--       ----/>  Window  <\------         -->
+    <!--       |         |            |         -->
+    <!--   Location   Document     History      -->
+    <!--               HTML                     -->
+    <!--              /    \                    -->
+    <!--          Head      Body                -->
+    <!--          / \         |                 -->
+    <!--      Meta  Title     |                 -->
+    <!--                    / | \               -->
+    <!--                 h1  p  p div           -->
+    <!--                        |               -->
+    <!--                      Strong            -->
+
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao DOM</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 name = "nom"> Iniciando estudos <strong> DOM </strong> </h1>
+    <p class="Birulei"> Aqui vai o <strong> resultado </strong> </p>
+    <p> Teste kk             </p>
+    <div id = "msg"> <strong> Clique </strong> em mim </div> 
+    touc
+    <script>
+    var t1 = window.document.getElementsByTagName('p')[0]
+    var t2 = window.document.getElementsByTagName('p')[1]
+    var t3 = window.document.getElementById('msg')
+    var t4 = window.document.getElementsByName('nom')[0]
+    document.write(t2.innerText)
+    document.write(t1.innerHTML)
+    t3.innerText = 'Testando k sopa'
+    document.write(t4.innerText)
+
+    // seletor
+
+    // ID -> #
+    // Class -> .
+
+    var s = window.document.querySelector('p.Birulei')
+    s.innerText = 'Kkkaska'
+    var ass = window.document.querySelector('div#msg')
+    ass.innerText = 'miodios'
+    
+    </script>
+</body>
+</html> 

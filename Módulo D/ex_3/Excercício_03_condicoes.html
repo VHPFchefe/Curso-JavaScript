@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Quem é você ? </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="verificar()">
+    <header> 
+        <h1> Verificador de Imagem </h1>
+    </header>
+    <section>
+        <div>
+            <p> Ano de nascimento
+                <input type="number" name="txtano" id="txtano" min="1">
+            </p>
+            <p> Sexo
+                <input type="radio" name="radsex" id="masc" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p id="verificar">
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="res"> Preencha os dados acima para ver o resultado!
+            <!-- <img id="img" src="" alt="Error"> -->
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Chefe</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

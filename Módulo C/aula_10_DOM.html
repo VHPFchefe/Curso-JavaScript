@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style> 
+        div#area{
+            background: #f5a9cf;
+            color: rgb(8, 8, 8);
+            font: normal 40px italic;
+            width: 0px 100%;
+            height: 100px;
+            line-height: 75px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="area">
+        Home Page #NOME DA EMPRESA#
+        
+    </div> 
+    <div id="Desc">
+        teste 2
+    </div>
+    
+    
+    <script>    
+        /*
+            fica meio ruim usar os eventos direto no html igual aqui em baixo
+        <div id="area" onmouseout="sair()" onmouseenter="entrar()" onclick="clicar()">
+        */
+        /* por script é mio */
+        var homepage = window.document.getElementById('area')
+        homepage.addEventListener('mouseenter',entrar)
+        homepage.addEventListener('click',clicar)
+        homepage.addEventListener('mouseout',sair)
+
+        function sair(){
+            homepage.innerHTML= 'Saiu!'
+        }
+        function entrar(){
+            homepage.innerHTML= 'Entrou'
+        }
+        function clicar(){
+            homepage.innerHTML= 'Clicou!'
+        }
+    </script>
+</body>
+</html>

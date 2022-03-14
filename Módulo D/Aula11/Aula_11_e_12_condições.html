@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aula de condições </title>
+    <style>
+div#Home{
+    font: normal 26px italic;
+    text-align: center;
+}
+p{
+    font: normal 26px arial ;
+    text-align: center;
+}
+div#Calc{
+    font: normal 20px arial;
+    height: 20%;
+    text-align: center;
+}
+
+    </style> 
+</head>
+<body>
+
+    <div id="Home"> 
+        <strong>Chama bola</strong> 
+        <p>
+         <img src="eu.jpg" alt="teste" > 
+        </p>
+    </div>
+
+    <div id="Calc"> calculadora   </div>
+
+     
+    <script>
+    var agora = new Date()
+    var diaSem = agora.getDay() // Dia da semana em id-index
+    var dia
+    switch(diaSem){
+    case 0: dia= 'Domingo'
+    break
+    case 1: dia= 'Segunda-Feira'
+    break
+    case 2: dia= 'Terça-Feira'
+    break
+    case 3: dia= 'Quarta-Feira'
+    break
+    case 4: dia= 'Quinta-Feira'
+    break
+    case 5: dia= 'Sexta-Feira'
+    break
+    case 6: dia= 'Sábado'
+    }
+    window.document.writeln(dia)
+
+    </script>
+</body>
+</html>

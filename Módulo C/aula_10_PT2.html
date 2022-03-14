@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Somando valores </h1>
+    <input type= "number" name="Valor1" id="v0">
+    <input type="number" name="Valor2" id="v1">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="resultado"> 
+        resultado
+    </div>
+    <script>
+        function gbk(id){
+            return window.document.getElementById(id)
+        }
+
+        function somar(){
+            var v0 = Number(gbk('v0').value) 
+            var v1 = Number(gbk('v1').value) 
+            var res= window.document.getElementById('resultado')
+            //somatoria
+            var retorno= v0 + v1
+            // retorno
+            res.innerHTML= retorno
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+/* Config padrão */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+
+html,body{
+    height: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+/* Header */
+header{
+    height: 90px;
+    background-color: rgb(138, 138, 233);
+}
+/* BoxCaptura */
+section.box-captura{
+    height: 200px;
+    background-color: rgb(1, 1, 2);
+}
+/* Content */
+section.content{
+    padding: 0 12%;
+    height: 300px;
+    background-color: rgb(111, 184, 15);
+}
+div.post{
+    height: 100%;
+    background-color: green;
+    width: 80%;
+}
+div.sidebar{
+    height: 100%;
+    background-color: purple;
+    width: 20%;
+}
+/* Footer  */
+footer{
+    height: 180px;
+    background-color: rgb(132, 141, 120);
+}

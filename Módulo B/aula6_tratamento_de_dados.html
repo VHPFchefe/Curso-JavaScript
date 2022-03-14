@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        body{
+            background-color: aquamarine;
+            color: black;
+            font: normal 25pt Arial;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <t1> 
+        
+    </t1>
+
+    <script>
+        var nome,n1,n2
+        nome = window.prompt('Qual é o seu nome ?')    
+        alert("Bem vindo à calculadora "+nome+"!")
+        n1 = prompt('Digite um número')
+        n2 = prompt('Digite um segundo número')
+        //alert(n1+n2) // Essse viadim concatenou kk
+
+
+        // vamo dnovo
+
+        // Window.prompt sempre retorna string
+
+        // string + string concatena!
+
+        // Vamos converter essa parada
+        //Number.parseInt inteiro
+        //Number.parseFloat com virgula
+
+        var n_1_convertido,n_2_convertido 
+
+        n_1_convertido = Number.parseFloat(n1) 
+        n_2_convertido = Number.parseFloat(n2) 
+
+        //alert(n_1_convertido+n_2_convertido) bora miorar isso ai
+
+        var an_1= Number(n1)
+        var an_2= Number(n2)
+        //alert(an_1+an_2)
+
+        document.write(nome)        
+
+        var teste = "Letras"
+        var teste2
+        var dinero_formatado
+        var meudin= 15.2965
+        
+        document.writeln(teste)
+        teste2= teste.toUpperCase()
+        document.writeln(teste2+" b")
+        document.writeln(meudin.toString())
+        // Fórmula do dinero 
+        dinero_formatado= meudin.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        document.write(dinero_formatado)
+    </script>    
+</body>
+
+
+</html>

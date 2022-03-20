@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Intervalator </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> 
+        <h1> Vamos contar ? </h1>
+    </header>
+    <section>
+
+        <div id="inicio_l">
+        <label for="n_inicio">Início:    </label><div id="contador"> CONTANDO... </div>
+        </div>
+        <i id="inicio_i"> <input type="number" name="num_inicio"  id="n_inicio"></i>
+
+        <div id="fim_l">
+            <label for="n_fim">Fim: </label> 
+        </div>
+        <i id="fim_i">         <input type="number" name="num_final"  id="n_fim"></i>
+
+        <div id="passo_l">
+            <label for="n_inter">Passo: </label> 
+        </div id="passo_i">
+        <i><input type="number" name="num_passo" id="n_inter" min="1"> </i>
+    </section>
+    <div id="btn"> <input type="button" value="Calcular" id = "botao" onclick="calcular()"></div>
+    <footer>
+        <p>&copy; Chefe</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Chefe Analisator </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> 
+        <h1> Analisador de Números</h1>
+    </header>
+    <section>
+
+        <div id="inicio_l"> <label for="item"> Número (entre 1 e 100): </label> <input type="number" name="item"  id="item"> <input type="button" value="Adicionar" id = "botao" onclick="adicionar()"></div>
+
+        <div id="contador"> 
+            <select id="tab" name="select" size="10" >
+                <option >Digite algum número na opção acima</option>
+            </select> <img src="gif_narutinho.gif" id="narutinho" >
+            
+            <div id="resposta"> 
+                
+                <p id="r_itens">   <br> </p>
+                <p id="r_media">   <br> </p>
+                <p id="r_desv">    <br> </p>
+                <p id="r_maior">   <br> </p>
+                <p id="r_menor">   <br> </p>
+            
+            </div> 
+
+        </div>
+
+        <div>
+            <input type="button" value="Executar" id="executar" onclick="executar()"> <input type="button" value="Reiniciar" id="reiniciar" onclick="reiniciar()">
+        </div>
+
+    </section>
+    <footer>
+        <p>&copy; Chefe</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
